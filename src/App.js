@@ -1,5 +1,5 @@
 import './App.css';
-import { Navbar, Gallery, About } from './PageSegments';
+import { Navbar, Gallery, About } from './Container';
 
 function App() {
   return (
