@@ -21,8 +21,8 @@ const Navbar = () => {
 
   return (
     <div className="navbar" class="position: relative bg-gray-800">
-      <div className="navbar-menu" class="position: absolute text-gray-50 m-1">
-        <h1>Kenneth</h1>
+      <div className="navbar-menu" class="position: absolute text-gray-50  w-full ">
+        <h1 class="font-dancing text-2xl m-2 md:text-4xl sm:text-1xl">Kenneth Svenningsson</h1>
       </div>
       <div
         className="navbar-image-slider"
@@ -34,7 +34,7 @@ const Navbar = () => {
                      className={ind === activeImageNum ? "currentSlide active" : "currentSlide"}
                      key={ind}
                   >
-                     {ind === activeImageNum && <img src={currentSlide} className="image" />}
+                     {ind === activeImageNum && <img src={currentSlide} alt={ind}/>}
                   </div>
                );
             })}

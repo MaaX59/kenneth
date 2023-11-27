@@ -3,7 +3,7 @@ import { Navbar, Gallery, About } from './Container';
 
 function App() {
   return (
-    <div>
+    <div className='app'>
     <Navbar/>
     <About />
     <Gallery />
