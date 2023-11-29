@@ -1,9 +1,11 @@
 import { React, useState } from "react";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
+import "./Navbar.css";
 import image1 from "../../Images/01.jpg";
 import image2 from "../../Images/02.jpg";
 import image3 from "../../Images/03.jpg";
 import image4 from "../../Images/04.jpg";
+// import image5 from "../../Images/05.jpg";
 
 const Navbar = () => {
   const sliderImages = [image1, image2, image3, image4];
@@ -32,26 +34,90 @@ const Navbar = () => {
         </div>
         <div class="flex flex-row">
           <h1 class="font-dancing text-1xl m-2 pr-5 md:text-2xl lg:text-4xl hover:text-gray-300">
-            {" "}
             <a href="#about">Vinter</a>
           </h1>
           <h1 class="font-dancing text-1xl m-2 pr-5 md:text-2xl lg:text-4xl hover:text-gray-300">
-            {" "}
             <a href="#about">Vår</a>
-            
           </h1>
           <h1 class="font-dancing text-1xl m-2 pr-8 md:text-2xl lg:text-4xl hover:text-gray-300">
-            {" "}
             <a href="#about">Sommar</a>
-            
           </h1>
           <h1 class="font-dancing text-1xl m-2 pr-5 md:text-2xl lg:text-4xl hover:text-gray-300">
-            {" "}
             <a href="#about">Om Mig</a>
           </h1>
         </div>
       </div>
-      <div
+
+      <div class="carousel">
+        <div class="carousel-inner">
+          <input
+            class="carousel-open"
+            type="radio"
+            id="carousel-1"
+            name="carousel"
+            aria-hidden="true"
+            hidden=""
+            checked="checked"
+          />
+          <div class="carousel-item">
+            <img src={image4} />
+          </div>
+          <input
+            class="carousel-open"
+            type="radio"
+            id="carousel-2"
+            name="carousel"
+            aria-hidden="true"
+            hidden=""
+          />
+          <div class="carousel-item">
+            <img src={image3} />
+          </div>
+          <input
+            class="carousel-open"
+            type="radio"
+            id="carousel-3"
+            name="carousel"
+            aria-hidden="true"
+            hidden=""
+          />
+          <div class="carousel-item">
+            <img src={image1} />
+          </div>
+          <label for="carousel-3" class="carousel-control prev control-1">
+            ‹
+          </label>
+          <label for="carousel-2" class="carousel-control next control-1">
+            ›
+          </label>
+          <label for="carousel-1" class="carousel-control prev control-2">
+            ‹
+          </label>
+          <label for="carousel-3" class="carousel-control next control-2">
+            ›
+          </label>
+          <label for="carousel-2" class="carousel-control prev control-3">
+            ‹
+          </label>
+          <label for="carousel-1" class="carousel-control next control-3">
+            ›
+          </label>
+          <ol class="carousel-indicators">
+            <li>
+                <label for="carousel-1" class="carousel-bullet">•</label>
+            </li>
+            <li>
+                <label for="carousel-2" class="carousel-bullet">•</label>
+            </li>
+            <li>
+                <label for="carousel-3" class="carousel-bullet">•</label>
+            </li>
+        </ol>
+        </div>
+      </div>
+
+      {/* my own attempt that didn´twork well */}
+      {/* <div
         className="navbar-image-slider"
         class="top-0 position:absolute max-w-full"
       >
@@ -80,7 +146,7 @@ const Navbar = () => {
         class=" position: absolute top-1/2 right-0 cursor-pointer border-0 rounded bg-gray-700 bg-opacity-90 hover:bg-opacity-80
          w-10 h-10"
         onClick={nextSlide}
-      />
+      /> */}
     </div>
   );
 };

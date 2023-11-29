@@ -1,14 +1,12 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-    "./src/**/*.{js,jsx,ts,tsx}",
-  ],
+  content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
       gradientColorStopPositions: {
-        94:'94%'
+        94: "94%",
       },
-      backgroundImage:{
+      backgroundImage: {
         1: "url('https://images.unsplash.com/photo-1533468432434-200de3b5d528?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=975&q=80')",
         2: "url('https://images.unsplash.com/photo-1586254574632-55e4aaea7793?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80')",
         3: "url('https://images.unsplash.com/photo-1536536982624-06c1776e0ca8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80')",
@@ -18,11 +16,10 @@ module.exports = {
       flex: {
         5: 5,
       },
-      fontFamily:{
-        'dancing':[ 'Dancing Script', 'cursive']
-      }
+      fontFamily: {
+        dancing: ["Dancing Script", "cursive"],
+      },
     },
   },
   plugins: [],
-}
-
+};
