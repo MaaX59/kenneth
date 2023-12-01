@@ -1,5 +1,4 @@
-import { React, useState } from "react";
-import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
+import { React } from "react";
 import "./Navbar.css";
 import image1 from "../../Images/01.jpg";
 import image2 from "../../Images/02.jpg";
@@ -8,24 +7,11 @@ import image4 from "../../Images/04.jpg";
 // import image5 from "../../Images/05.jpg";
 
 const Navbar = () => {
-  const sliderImages = [image1, image2, image3, image4];
-  const [activeImageNum, setCurrent] = useState(0);
-  const length = sliderImages.length;
-  const nextSlide = () => {
-    setCurrent(activeImageNum === length - 1 ? 0 : activeImageNum + 1);
-  };
-  const prevSlide = () => {
-    setCurrent(activeImageNum === 0 ? length - 1 : activeImageNum - 1);
-  };
-  if (!Array.isArray(sliderImages) || sliderImages.length <= 0) {
-    return null;
-  }
-
   return (
     <div className="navbar" class="position: relative bg-gray-800">
       <div
         className="navbar-menu"
-        class="position: absolute text-gray-50  w-full flex flex-row justify-between"
+        class="position: absolute z-30 text-gray-50  w-full flex flex-row justify-between"
       >
         <div class="flex">
           <h1 class="font-dancing text-2xl pl-2 m-2 md:text-4xl sm:text-1xl flex">
@@ -56,11 +42,11 @@ const Navbar = () => {
             id="carousel-1"
             name="carousel"
             aria-hidden="true"
-            hidden=""
+            hidden="true"
             checked="checked"
           />
           <div class="carousel-item">
-            <img src={image4} />
+            <img src={image4} alt="awdad" />
           </div>
           <input
             class="carousel-open"
@@ -68,10 +54,10 @@ const Navbar = () => {
             id="carousel-2"
             name="carousel"
             aria-hidden="true"
-            hidden=""
+            hidden="true"
           />
           <div class="carousel-item">
-            <img src={image3} />
+            <img src={image3} alt="awdad" />
           </div>
           <input
             class="carousel-open"
@@ -79,11 +65,12 @@ const Navbar = () => {
             id="carousel-3"
             name="carousel"
             aria-hidden="true"
-            hidden=""
+            hidden="true"
           />
           <div class="carousel-item">
-            <img src={image1} />
+            <img src={image1} alt="awdad" />
           </div>
+
           <label for="carousel-3" class="carousel-control prev control-1">
             ‹
           </label>
@@ -102,17 +89,6 @@ const Navbar = () => {
           <label for="carousel-1" class="carousel-control next control-3">
             ›
           </label>
-          <ol class="carousel-indicators">
-            <li>
-                <label for="carousel-1" class="carousel-bullet">•</label>
-            </li>
-            <li>
-                <label for="carousel-2" class="carousel-bullet">•</label>
-            </li>
-            <li>
-                <label for="carousel-3" class="carousel-bullet">•</label>
-            </li>
-        </ol>
         </div>
       </div>
 

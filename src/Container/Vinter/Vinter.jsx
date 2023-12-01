@@ -6,28 +6,27 @@ import image4 from "../../Images/vinter/04.jpg";
 import image5 from "../../Images/vinter/05.jpg";
 
 const Vinter = () => {
+  const images = [image1, image2, image3, image4, image5];
+
+  const openImage()
+
   return (
-   
-    <div class="flex w-full h-full items-center justify-center">
-    <div class="flex w-5/6 h-5/6">
-      <div class="slide relative flex-auto bg-cover bg-center transition-all duration-500 ease-in-out hover:flex-grow" > 
-      <img src={image1} />
+    <div class="flex items-center justify-center flex-col ">
+      <div>
+        <h2 class="text-gray-500 flex text-5xl text-opacity-1 p-10">Vinter</h2>
       </div>
-      <div class="slide relative flex-auto bg-cover bg-center transition-all duration-500 ease-in-out hover:flex-grow" >
-      <img src={image2} />
-      </div>
-      <div class="slide relative flex-auto bg-cover bg-center transition-all duration-500 ease-in-out hover:flex-grow" >
-      <img src={image3} />
-      </div>
-      <div class="slide relative flex-auto bg-cover bg-center transition-all duration-500 ease-in-out hover:flex-grow" >
-      <img src={image4} />
-      </div>
-      <div class="slide relative flex-auto bg-cover bg-center transition-all duration-500 ease-in-out hover:flex-grow" >
-      <img src={image5} />
+      <div class="flex flex-wrap justify-center">
+        {images.map((image) => (
+          <div onClick={(image)=> openImage(image)} class=" w-64 p-5 hover:scale-125 transition">
+            <img
+              src={image}
+              alt="adad"
+              class="rounded duration-75 cursor-pointer"
+            />
+          </div>
+        ))}
       </div>
     </div>
-  
-  </div>
   );
 };
 
