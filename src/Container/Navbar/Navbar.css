@@ -32,11 +32,11 @@
 .carousel-control {
   background: rgba(0, 0, 0, 0.28);
   border-radius: 50%;
-  color: #fff;
+  color: #bb1c1c;
   cursor: pointer;
   display: none;
-  font-size: 40px;
-  height: 40px;
+  font-size: 45px;
+  height: 50px;
   line-height: 35px;
   position: absolute;
   top: 50%;
@@ -45,7 +45,7 @@
   -ms-transform: translate(0, -50%);
   transform: translate(0, -50%);
   text-align: center;
-  width: 40px;
+  width: 50px;
 }
 
 .carousel-control.prev {
@@ -58,7 +58,7 @@
 
 .carousel-control:hover {
   background: rgba(0, 0, 0, 0.8);
-  color: #aaaaaa;
+  color: #a61515;
 }
 
 #carousel-1:checked ~ .control-1,

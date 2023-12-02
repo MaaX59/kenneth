@@ -4,7 +4,6 @@ import image1 from "../../Images/01.jpg";
 import image2 from "../../Images/02.jpg";
 import image3 from "../../Images/03.jpg";
 import image4 from "../../Images/04.jpg";
-// import image5 from "../../Images/05.jpg";
 
 const Navbar = () => {
   return (
@@ -71,16 +70,16 @@ const Navbar = () => {
             <img src={image1} alt="awdad" />
           </div>
 
-          <label for="carousel-3" class="carousel-control prev control-1">
+          <label for="carousel-3" class="carousel-control prev control-1 ">
             ‹
           </label>
-          <label for="carousel-2" class="carousel-control next control-1">
+          <label for="carousel-2" class="carousel-control next control-1 ">
             ›
           </label>
-          <label for="carousel-1" class="carousel-control prev control-2">
+          <label for="carousel-1" class="carousel-control prev control-2 ">
             ‹
           </label>
-          <label for="carousel-3" class="carousel-control next control-2">
+          <label for="carousel-3" class="carousel-control next control-2 ">
             ›
           </label>
           <label for="carousel-2" class="carousel-control prev control-3">
