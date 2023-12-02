@@ -18,6 +18,7 @@ module.exports = {
       },
       fontFamily: {
         dancing: ["Dancing Script", "cursive"],
+        cormorant: ["Cormorant Garamond"],
       },
     },
   },

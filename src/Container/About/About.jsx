@@ -13,9 +13,7 @@ const About = () => {
       {/* bg-gradient-to-br from-black to-gray-900 */}
       <div class=" flex right-0 justify-center align-end flex-col bakground text-gray-400 pr-2 ">
         {/* <img src={bg} alt="bg" class="bg-contain flex absolut" /> */}
-        <h3 class="font-sans relative font-normal md:text-3xl lg:text-6xl pl-3 lg:pl-8 md:pl-5 ">
-          Hej
-        </h3>
+        <h3 class="font-cormorant md:text-3xl lg:text-6xl ">Hej</h3>
         <h1 class="font-sans font-normal md:text-2xl lg:text-4xl md:pt-3">
           Jag är Kenneth Svenningsson
         </h1>
