@@ -1,7 +1,7 @@
 import React from "react";
 import headshot from "../../Images/headshot.jpg";
-import bg from "../../Images/bg.jpg";
-import bg2 from "../../Images/bg2.jpg";
+// import bg from "../../Images/bg.jpg";
+// import bg2 from "../../Images/bg2.jpg";
 // import Snowfall from 'react-snowfall'
 
 const About = () => {

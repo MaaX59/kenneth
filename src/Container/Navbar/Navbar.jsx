@@ -1,7 +1,6 @@
 import { React } from "react";
 import "./Navbar.css";
 import image1 from "../../Images/01.jpg";
-import image2 from "../../Images/02.jpg";
 import image3 from "../../Images/03.jpg";
 import image4 from "../../Images/04.jpg";
 

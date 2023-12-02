@@ -1,13 +1,18 @@
 import { React, useState } from "react";
 
-const Gallery = (imageArray) => {
+const Gallery = (props) => {
   const [fullImage, setFullImage] = useState();
   return (
-    <div>
-      <div class="flex flex-wrap justify-center gap-12 z-10">
-        {imageArray.images.map((image, index) => (
+    <div class="flex items-center justify-center flex-col ">
+      <div>
+        <h2 class="text-gray-200 flex text-5xl font-cormorant text-opacity-1 p-14">
+          {props.title}
+        </h2>
+      </div>
+      <div class="flex flex-wrap justify-center gap-12 z-10 pb-16">
+        {props.images.map((image, index) => (
           <div
-            class=" w-64 hover:scale-125 transition"
+            class=" w-64 md:w-1/6 hover:scale-125 transition"
             key={index}
             onClick={() => setFullImage(image)}
           >
@@ -28,7 +33,7 @@ const Gallery = (imageArray) => {
           <img
             src={fullImage}
             alt="fullimage"
-            class="relative rounded-lg flex h-4/5"
+            class="relative rounded-lg flex md:h-3/4 "
           />
           <div class="fixed top-5 right-10 text-white text-4xl cursor-pointer">
             x

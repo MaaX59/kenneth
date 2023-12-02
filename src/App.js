@@ -1,5 +1,5 @@
 import "./App.css";
-import { Navbar, Gallery, About, Vinter } from "./Container";
+import { Navbar, Vår, Sommar, About, Vinter } from "./Container";
 
 function App() {
   return (
@@ -7,6 +7,8 @@ function App() {
       <Navbar />
       <About />
       <Vinter />
+      <Vår />
+      <Sommar />
     </div>
   );
 }
