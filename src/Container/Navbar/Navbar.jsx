@@ -10,7 +10,7 @@ const Navbar = () => {
     <div className="navbar" class="position: relative bg-gray-800">
       <div
         className="navbar-menu"
-        class="position: absolute z-30 text-gray-50  w-full flex flex-row justify-between"
+        class="position: absolute z-10 text-gray-50  w-full flex flex-row justify-between"
       >
         <div class="flex">
           <h1 class="font-dancing text-2xl pl-2 m-2 md:text-4xl sm:text-1xl flex">
