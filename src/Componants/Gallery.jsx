@@ -4,13 +4,13 @@ const Gallery = (props) => {
   const [fullImage, setFullImage] = useState();
   return (
     <div class="flex items-center justify-center flex-col ">
-      <div class="m-3">
+      <div class="pb-14  relative">
         <img
           src={props.titleBackground}
-          alt="winter background"
-          class="flex w-screen h-50 "
+          alt="gallery background"
+          class="bg-center w-screen h-50 "
         />
-        <h2 class="text-gray-200 relative top-1/2 left-1/2 z-10 text-5xl font-cormorant text-opacity-1">
+        <h2 class="text-gray-200 absolute flex justify-center items-center top-1/2 z-10 text-5xl font-cormorant text-opacity-1">
           {props.title}
         </h2>
       </div>
