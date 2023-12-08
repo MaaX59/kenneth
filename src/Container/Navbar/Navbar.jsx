@@ -18,13 +18,13 @@ const Navbar = () => {
         </div>
         <div class="flex flex-row">
           <h1 class="font-dancing text-1xl m-2 pr-5 md:text-2xl lg:text-4xl hover:text-gray-300">
-            <a href="#about">Vinter</a>
+            <a href="#vinter">Vinter</a>
           </h1>
           <h1 class="font-dancing text-1xl m-2 pr-5 md:text-2xl lg:text-4xl hover:text-gray-300">
-            <a href="#about">Vår</a>
+            <a href="#vår">Vår</a>
           </h1>
           <h1 class="font-dancing text-1xl m-2 pr-8 md:text-2xl lg:text-4xl hover:text-gray-300">
-            <a href="#about">Sommar</a>
+            <a href="#sommar">Sommar</a>
           </h1>
           <h1 class="font-dancing text-1xl m-2 pr-5 md:text-2xl lg:text-4xl hover:text-gray-300">
             <a href="#about">Om Mig</a>

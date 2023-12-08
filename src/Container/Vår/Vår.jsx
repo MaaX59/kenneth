@@ -9,7 +9,11 @@ import image5 from "../../Images/Vår/05.jpg";
 
 const Vår = () => {
   const images = [image1, image2, image3, image4, image5];
-  return <Gallery images={images} title={"Vår"} />;
+  return (
+    <div id="vår">
+      <Gallery images={images} title={"Vår"} />;
+    </div>
+  );
 };
 
 export default Vår;

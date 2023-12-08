@@ -8,7 +8,11 @@ import image5 from "../../Images/sommar/05.jpg";
 
 const Sommar = () => {
   const images = [image1, image2, image3, image4, image5];
-  return <Gallery images={images} title={"Sommar"} />;
+  return (
+    <div id="sommar">
+      <Gallery images={images} title={"Sommar"} />
+    </div>
+  );
 };
 
 export default Sommar;
