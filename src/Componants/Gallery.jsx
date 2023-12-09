@@ -4,15 +4,15 @@ const Gallery = (props) => {
   const [fullImage, setFullImage] = useState();
   return (
     <div class="flex items-center justify-center flex-col ">
-      <div class="pb-14  relative">
+      <div class="mb-14 relative text-center">
         <img
           src={props.titleBackground}
           alt="gallery background"
-          class="bg-center w-screen h-50 "
+          class=" w-100% h-32 lg:h-52 w-screen overflow-hidden "
         />
-        <h2 class="text-gray-200 absolute flex justify-center items-center top-1/2 z-10 text-5xl font-cormorant text-opacity-1">
+        <div class="center-text text-gray-200 z-10 text-5xl lg:text-7xl font-cormorant">
           {props.title}
-        </h2>
+        </div>
       </div>
       <div class="flex flex-wrap justify-center gap-12 z-10 pb-16">
         {props.images.map((image, index) => (
